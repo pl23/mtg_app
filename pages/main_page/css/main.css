@@ -1,0 +1,10 @@
+body{background-color: aqua;}
+ul{
+    margin: auto;
+    padding: auto;
+    list-style-type: none;}
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+section{margin: 20px;}
