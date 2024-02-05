@@ -1,0 +1,23 @@
+body{}
+
+header{}
+
+section{}
+
+footer{}
+
+.directory_link_list{
+    list-style-type: none;
+}
+
+.directory_link_list li{
+    display: inline;
+}
+
+.directory_link_list_account{
+    list-style-type: none;
+}
+
+.directory_link_list_account li{
+}
+
