@@ -8,4 +8,10 @@ def home (request):
 
 def blank(request):
     return redirect('home/')
+
+def login(request):
+    return render(request,'login.html')
+
+def register(request):
+    return render(request,'register.html')
     

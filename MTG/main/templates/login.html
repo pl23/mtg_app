@@ -1,0 +1,27 @@
+{% extends "base_template.html"%}
+{% load static %}
+
+{% block title %}
+    Sign In
+{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id='sign-in-container'>
+        <div id='sign-in-box'>
+            <form action="/action_page.php">
+                <label for="fname">Username:</label><br>
+                <input type="text" id="username-input" name="username"><br>
+                <label for="lname">Password:</label><br>
+                <input type="text" id="password-input" name="password"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <hr/>
+            <p>Don't have an account?</p>
+            <a href="../register/"><button class="centered-button">Create Account</button></a>
+        </div>
+    </div>
+{% endblock %}

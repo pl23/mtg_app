@@ -1,0 +1,28 @@
+{% extends "base_template.html"%}
+{% load static %}
+
+{% block title %}
+    Sign In
+{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id='sign-in-container'>
+        <div id='sign-in-box'>
+            <form action=".">
+                <label for="fname">Email Address:</label><br>
+                <input type="text" id="email-input" name="email"><br><br>
+                <label for="fname">Desired Username:</label><br>
+                <input type="text" id="desired-username-input" name="d-username-input"><br><br>
+                <label for="lname">Password:</label><br>
+                <input type="text" id="password-input" name="password"><br>
+                <label for="lname">Confirm Password:</label><br>
+                <input type="text" id="confirm-password-input" name="confirm-password"><br><br>
+                <input type="submit" value="Create Account">
+            </form>
+        </div>
+    </div>
+{% endblock %}
