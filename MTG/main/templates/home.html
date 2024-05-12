@@ -1,53 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web_app</title>
-    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% extends "base_template.html" %}
 
+{% block title %}
+    MTG Stat Tracking
+{% endblock %}
 
-</head>
-
-<body>
-    <header>
-        <!-- <a href="main_page.html"> -->
-            <h1 id="page-title">MTG Stat Tracking</h1>
-        <!-- </a> -->
-        <!-- <div class="test"></div> -->
-        <div id="planeswalker-logo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/MTG_%28PW%29.svg" alt="" id="planeswalker-logo">
-        </div>
-        <ul class="nav-menu">
-            <li class="nav-menu-item">
-                <a href="main_page.html">
-                    <button class="nav-button">Home</button>
-                </a>
-            </li>
-            <li class="nav-menu-item">
-                <a href="../../sub_pages/forms/html/page.html">
-                    <button class="nav-button">Forms</button>
-                </a>
-            </li>
-            <li class="nav-menu-item">
-                <a href="../../sub_pages/sing_in/html/page.html">
-                    <button class="nav-button">Sign In</button>
-                </a>
-            </li>
-        </ul>
-    </header>
-    <main>
-        
-    </main>
-
-    <!-- <footer>
-        <ul class="nav-menu">
-            <li class="nav-menu-item"><a href="main_page.html"><button class="nav-button">Home</button></a></li>
-            <li class="nav-menu-item"><a href="../../sub_pages/sing_in/html/page.html"><button class="nav-button">Sign In</button></a></li>
-            <li class="nav-menu-item"><a href="../../sub_pages/forms/html/page.html"><button class="nav-button">Forms</button></a></li>
-        </ul>
-    </footer> -->
-</body>
-
-</html>
+{% block content %}
+    placeholder
+{% endblock %}
