@@ -3,4 +3,4 @@
 
 ```cd MTG```
 
-```python manage.py runsrever```
+```python manage.py runserver```

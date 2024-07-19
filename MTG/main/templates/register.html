@@ -6,22 +6,28 @@
 {% endblock %}
 
 {% block links %}
-    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+    {% static 'your_script.js' %}
 {% endblock %}
 
 {% block content %}
-    <div id='sign-in-container'>
-        <div id='sign-in-box'>
+    <div id='register-container'>
+        <div id='register-box'>
             <form action=".">
                 <label for="fname">Email Address:</label><br>
                 <input type="text" id="email-input" name="email"><br><br>
                 <label for="fname">Desired Username:</label><br>
                 <input type="text" id="desired-username-input" name="d-username-input"><br><br>
                 <label for="lname">Password:</label><br>
-                <input type="text" id="password-input" name="password"><br>
+                <input type="password" id="password-input" name="password"><br>
                 <label for="lname">Confirm Password:</label><br>
-                <input type="text" id="confirm-password-input" name="confirm-password"><br><br>
+                <input type="password" id="confirm-password-input" name="confirm-password"><br><br>
                 <input type="submit" value="Create Account">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="first-name-input" name="first_name"><br><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="last-name-input" name="last_name"><br><br>
+
             </form>
         </div>
     </div>
